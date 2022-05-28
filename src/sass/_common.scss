@@ -5,6 +5,37 @@ body {
   color: $main-color;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -41,5 +72,28 @@ body {
     max-width: 1280px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+
+.button {
+  display: block;
+  min-width: 140px;
+  padding: 8px 20px;
+
+  font-family: 'Caveat Brush';
+  font-size: 18px;
+  line-height: 1.28;
+  color: $btn-text-color;
+
+  border: none;
+  border-radius: 25px;
+
+  background-color: $main-accent;
+
+  @media (min-width: 1280px) {
+    min-width: 158px;
+
+    font-size: 24px;
+    line-height: 1.25;
   }
 }
