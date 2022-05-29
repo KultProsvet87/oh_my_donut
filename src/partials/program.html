@@ -1,5 +1,86 @@
-<p>I am Program</p>
+<section class="container program">
+  <h2 class="program__title">Program</h2>
+  <div class="program__history">
+    <p class="program__text">
+      Indulge in this immersive sweet treat experience with The Chef Donut Queen
+      in her New York donut shop!
+    </p>
+    <ul class="program__text">
+      <li class="program__text">&#62; A stand up history of donuts</li>
+      <li class="program__text">&#62; Make 3 donut flavors of your choice</li>
+      <li class="program__text">&#62; Enjoy all-you-can-eat donuts</li>
+      <li class="program__text">&#62; Cocktail pairings and coffee included</li>
+      <li class="program__text">
+        &#62; Photoshoot by professional photographer
+      </li>
+      <li class="program__text">&#62; Secret receipt of cooking from Eva</li>
+      <li class="program__text">
+        &#62; All products are included in the price
+      </li>
+    </ul>
+    <p class="program__text hide" read-more>
+      Come with your dear people and friends and you will spend an unforgettable
+      time and will become a real professional in donuts cooking!
+    </p>
+    <button class="program__button" type="button" read-more-button>
+      Read more
+    </button>
+  </div>
+  <ul class="program__meta">
+    <li class="program__card">
+      <div class="program__item box1">
+        <b>Type of the event</b>
+        <p>Cooking classes</p>
 
-<h2>Program</h2>
+        <svg class="program__icon" width="19" height="19">
+          <use href="/src/images/sprite.svg#icon-toque"></use>
+        </svg>
+      </div>
+    </li>
+    <li class="program__card">
+      <div class="program__item box2">
+        <b>Number of guests</b>
+        <p>1 to 20</p>
+        <svg class="program__icon" width="19" height="19">
+          <use href="/src/images/sprite.svg#icon-people"></use>
+        </svg>
+      </div>
+    </li>
+    <li class="program__card">
+      <div class="program__item box3">
+        <b>Time of the event</b>
+        <p>18:30 (2.5 hours)</p>
+        <svg class="program__icon" width="19" height="19">
+          <use href="/src/images/sprite.svg#icon-clock"></use>
+        </svg>
+      </div>
+    </li>
+    <li class="program__card">
+      <div class="program__item box4">
+        <b>The host speaks</b>
+        <p>English, French</p>
+        <svg class="program__icon" width="19" height="19">
+          <use href="/src/images/sprite.svg#icon-messeg"></use>
+        </svg>
+      </div>
+    </li>
+  </ul>
+  <script>
+    (() => {
+      const btnRef = document.querySelector('[read-more-button]');
+      const textRef = document.querySelector('[read-more]');
 
-<p>Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York donut shop!</p>
+      btnRef.addEventListener('click', () => {
+        const expanded = btnRef.classList.toggle('is-open');
+        btnRef.setAttribute('aria-expanded', !expanded);
+        textRef.classList.toggle('is-open');
+
+        if (btnRef.innerText === 'Read more') {
+          btnRef.innerText = 'Read less';
+        } else {
+          btnRef.innerText = 'Read more';
+        }
+      });
+    })();
+  </script>
+</section>
