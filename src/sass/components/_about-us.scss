@@ -1,22 +1,17 @@
 
-.about-us-section {
+.about-us {
     padding-bottom: 16px;
     // background-color: #E5E5E5;
 }
 
-.about-us-section__image {
-    width: 279px;
-    height: 298px;
+.about-us__image {
+    // min-width: 280px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 16px;
 }
 
-.about-us-section__box {
-    position: relative;
-}
-
-.about-us-section__title {
+.about-us__title {
     font-family: 'Caveat Brush';
     font-size: 24px;
     line-height: 1.25;
@@ -25,21 +20,14 @@
     margin-bottom: 8px;
 }
 
-.about-us-section__description {
+.about-us__description {
     font-size: 16px;
     line-height: 1.25;
 
     margin-bottom: 12px;
 }
 
-
-.button.about-us-section__button {
-    position: absolute;
-    bottom: 15%;
-    left: 0;
-
-    max-width: 67px;
-    height: 23px;
+.button.about-us__button {
     padding: 0;
     text-align: left;
   
