@@ -1,6 +1,5 @@
 .registration{
-    display: flex;
-    justify-content: center;
+
     &__box{
         background-color:#FFFFF9;
         box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
@@ -17,11 +16,12 @@
             height: 260px;
             padding: 0;
         }
+        
         @media (min-width: 1280px) {
             width: 822px;
             height: 260px;
         }
-        }
+    }
 
     /*background-image: url(../images/registration/registration-bagel.png);*/
     &__name{
@@ -34,6 +34,7 @@
         text-align: center;
         color: #2E2520;
         margin: 0;
+        
 
         @media (min-width: 768px) {
             position: absolute;
@@ -61,26 +62,38 @@
         list-style: none;
         text-align: center;
         margin: 0;
-        padding-left: 0;
+        padding: 0;
         border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-
+        padding-bottom: 20px;
+    
         @media (min-width: 768px) {
             border-bottom: none;
             margin-right: 20px;
             text-align: right;
         }
+
         @media (min-width: 1280px) {
             margin-right: 32px;
             font-size: 20px;
             line-height: 1.2;
         }
     }
-    &__link:last-child{
-        
-    }
 
     &__date{
         margin: 0;
+    }
+    &__item{
+        padding-top: 0;
+    }
+    &__item:last-child{
+        padding-top: 20px;
+    }
+
+    &__form{
+        @media (min-width: 768px) {
+            
+            align-items: center;
+        }
     }
 
     &__data{
@@ -90,13 +103,9 @@
         text-align: center;
         color: #2E2520;
         
-        
         @media (min-width: 768px) {
-            display: flex;
             height: 180px;
-            width: 237px;
             padding-left: 27px;
-            margin-right: 54px;
             border-left: 1px solid #AB816C;
             align-items: center;
             
@@ -109,22 +118,43 @@
         }
     }
 
-
     &__data-apply{
         font-size: 18px;
         line-height: 1.2222;
         margin: 0;
         padding-top: 8px;
         padding-bottom: 22px;
+
         @media (min-width: 768px) {
+            
+            width: 237px;
             text-align: left;
             padding-top: 0;
             padding-bottom: 18px;
         }
-
     }
 
-    &__data-input{
+    &__input{
+        display: flex;
+        margin: 0 auto;
+        width: 264px;
+        height: 22px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $main-accent;    
+        outline: none;
+        background-color:#FFFFF9;
+        color: $main-accent;
+        margin-top:10px;
+
+        @media (min-width: 768px) {
+            width: 237px;
+        }
+    }
+
+    &__input::placeholder{
+        color: rgba(171, 129, 108, 0.5);
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
@@ -133,12 +163,22 @@
         list-style: none;
         margin: 0;
         padding-left: 0;
+    }
+
+    &__label{
+        padding-bottom: 22px;
+        @media (min-width: 768px) {
+            padding-bottom: 18px;
+        }
+
+    }
+
     
-    }
-    &__data-p{
-        margin: 0;
-        border-bottom: 1px solid #AB816C;
-    }
+
+
+
+
+
 
     &__button-options{
         background: #AB816C;
@@ -151,12 +191,16 @@
         line-height: 1.25;
         text-align: center;
         color: #FFFFFF;
+        font-family: 'Caveat Brush';
+
+        
       
         @media (min-width: 1280px) {
             width: 158px;
             height: 45px;
             font-size: 24px;
             line-height: 1.25;
+            
         }
     }
     &__button{
@@ -166,32 +210,11 @@
         padding-bottom: 32px;
 
         @media (min-width: 768px) {
-            padding: 0;
-        }
+            padding-left: 54px;
+            }
     }
-    &__link{
-        padding-bottom: 20px;
-        @media (min-width: 1280px) {
-            padding-bottom: 32px;
-        }
-    }
-
-    &__link:last-child{
-        @media (min-width: 768px) {
-            padding-bottom: 0;
-        }
-    }
-
-    &__fog{
-        margin-bottom: 22px;
-    
-        @media (min-width: 1280px) {
-            margin-bottom: 17px;
-        }
-    }
-    &__fog:last-child{
-        margin-bottom: 0;
-    }
-    
 }
 
+.contact-name{
+    margin-top: 0;
+}
