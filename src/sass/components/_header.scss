@@ -1,4 +1,15 @@
+// .header {
+//   height: 1100px;
+// }
+.wrapper {
+  @media (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
 .container--center {
+  height: 500px;
   position: relative;
   text-align: center;
   background-image: url(../images/header-img/donuts-mob-1.5x.png);
@@ -21,6 +32,11 @@
       background-image: url(../images/header-img/donuts-tablet-3x.png);
     }
   }
+  @media (min-width: 1280px) {
+    background-image: url(../images/header-img/donuts-desktop-1.5x.png);
+    background-size: 793px 831px;
+    background-position: 564 -170;
+  }
 }
 .logo {
   display: inline-block;
@@ -29,17 +45,25 @@
     margin-top: 36px;
     margin-bottom: 16px;
   }
+  @media (min-width: 1280px) {
+    margin: 38px 162px 42px 0;
+  }
 }
 .nav {
   display: none;
   @media (min-width: 1280px) {
     display: flex;
   }
-  &__item {
-    list-style: none;
+  &__item:not(:last-child) {
+    margin-right: 20px;
   }
   &__link {
-    text-decoration: none;
+    color: $main-color;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 .mob-menu__open-btn {
@@ -59,12 +83,18 @@
   font-family: 'Caveat Brush';
   font-weight: 400;
   font-size: 30px;
-  line-height: 38px;
+  line-height: 1.27;
   max-width: 224px;
   margin: 0 auto 8px auto;
   color: $main-color;
   @media (min-width: 768px) {
     margin-left: 0;
+  }
+  @media (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 1.02;
+    max-width: 490px;
+    margin-bottom: 16px;
   }
 }
 .subtitle {
@@ -75,11 +105,18 @@
   @media (min-width: 768px) {
     margin-bottom: 20px;
   }
+  @media (min-width: 1280px) {
+    font-size: 24px;
+  }
 }
 .button--header {
   margin: 0 auto 40px auto;
   @media (min-width: 768px) {
     margin: 0 0 20px 0;
+  }
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.25;
   }
 }
 .social-media {
