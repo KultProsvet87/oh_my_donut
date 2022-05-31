@@ -1,0 +1,367 @@
+.program {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @include for-tablet {
+    display: flex;
+    padding-bottom: 53px;
+    padding-top: 77px;
+  }
+
+  @include for-laptop {
+    font-size: 18px;
+    line-height: 1.22;
+    padding-top: 22px;
+    padding-bottom: 134px;
+    padding-left: 122px;
+    padding-right: 122px;
+  }
+
+  &__history {
+    @include for-tablet {
+      max-width: 336px;
+      margin-right: 32px;
+    }
+
+    @include for-laptop {
+      max-width: 392px;
+      margin-right: 142px;
+    }
+  }
+
+  &__title {
+    font-family: 'Caveat Brush', sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+
+    margin-bottom: 8px;
+
+    @include for-tablet {
+      text-align: left;
+    }
+
+    @include for-laptop {
+      font-size: 36px;
+      line-height: 1.81;
+    }
+  }
+
+  &__list {
+    margin-top: 8px;
+
+    @include for-laptop {
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 8px;
+
+    @include for-laptop {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 8px;
+
+    font-family: 'Caveat Brush', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    color: $main-accent;
+
+    @include for-laptop {
+      display: none;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    padding-bottom: 32px;
+    margin: -30px -10px;
+
+    @include for-tablet {
+      margin: -23px -16px;
+      padding-top: 0;
+      padding-bottom: 0;
+      max-height: 352px;
+    }
+
+    @include for-laptop {
+      padding-top: 43px;
+      margin: -40px -70px;
+      max-height: 440px;
+    }
+  }
+
+  &__card {
+    margin: 30px 10px;
+    flex-basis: calc((100% - 40px) / 2);
+
+    &:nth-child(2n) {
+      transform: translateY(32px);
+    }
+
+    @include for-tablet {
+      margin: 23px 16px;
+      flex-basis: calc((100% - 64px) / 2);
+
+      &:nth-child(2n) {
+        transform: translateY(45px);
+      }
+    }
+
+    @include for-laptop {
+      margin: 40px 70px;
+      flex-basis: calc((100% - 280px) / 2);
+
+      &:nth-child(2n) {
+        transform: translateY(128px);
+      }
+
+      &:last-child {
+        transform: translateY(123px);
+      }
+    }
+  }
+
+  &__font {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #000000;
+    background-color: $prgm-item-bg-color;
+    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+    @include for-tablet {
+      height: 152px;
+      width: 152px;
+    }
+
+    @include for-laptop {
+      height: 180px;
+      width: 180px;
+    }
+
+    &.box1::before {
+      content: '';
+      position: absolute;
+      top: -35px;
+      left: 25px;
+      height: 80px;
+      width: 80px;
+      background-image: url(/src/images/program/box1@1x.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/program/box1@2x.png);
+      }
+
+      @include for-tablet {
+        left: 36px;
+      }
+
+      @include for-laptop {
+        left: 45px;
+        height: 90px;
+        width: 90px;
+        background-size: 90px 90px;
+      }
+    }
+
+    &.box2::before {
+      content: '';
+      position: absolute;
+      top: -35px;
+      left: 25px;
+      height: 80px;
+      width: 80px;
+      background-image: url(/src/images/program/box2@1x.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/program/box2@2x.png);
+      }
+
+      @include for-tablet {
+        left: 36px;
+      }
+
+      @include for-laptop {
+        left: 45px;
+        height: 90px;
+        width: 90px;
+        background-size: 90px 90px;
+      }
+    }
+
+    &.box3::before {
+      content: '';
+      position: absolute;
+      top: -35px;
+      left: 25px;
+      height: 80px;
+      width: 80px;
+      background-image: url(/src/images/program/box3@1x.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/program/box3@2x.png);
+      }
+
+      @include for-tablet {
+        left: 36px;
+      }
+
+      @include for-laptop {
+        left: 45px;
+        height: 90px;
+        width: 90px;
+        background-size: 90px 90px;
+      }
+    }
+
+    &.box4::before {
+      content: '';
+      position: absolute;
+      top: -35px;
+      left: 25px;
+      height: 80px;
+      width: 80px;
+      background-image: url(/src/images/program/box4@1x.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/program/box4@2x.png);
+      }
+
+      @include for-tablet {
+        left: 36px;
+      }
+
+      @include for-laptop {
+        left: 45px;
+        height: 90px;
+        width: 90px;
+        background-size: 90px 90px;
+      }
+    }
+
+    & b {
+      font-family: 'Caveat Brush', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.28;
+
+      @include for-laptop {
+        font-size: 24px;
+        line-height: 1.33;
+      }
+    }
+
+    & p {
+      margin-top: 4px;
+      font-size: 14px;
+      line-height: 1.21;
+
+      @include for-tablet {
+        margin-top: 8px;
+      }
+
+      @include for-laptop {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  &__icon {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    fill: $prgm-icon-color;
+
+    @include for-tablet {
+      margin-bottom: 14px;
+      width: 21px;
+      height: 21px;
+    }
+
+    @include for-laptop {
+      margin-bottom: 16px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.program__input {
+  display: none;
+}
+
+.program__rmtext {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  margin: 0;
+  @include for-laptop {
+    opacity: 1;
+    font-size: inherit;
+    max-height: inherit;
+  }
+}
+
+.program__input:checked ~ .program__rmtext {
+  opacity: 1;
+  font-size: inherit;
+  max-height: inherit;
+  margin-bottom: 8px;
+
+  @include for-tablet {
+    margin-top: 18px;
+  }
+}
+
+.program__input ~ .program__btn:before {
+  content: 'Read more';
+}
+
+.program__input:checked ~ .program__btn:before {
+  content: 'Less';
+}
