@@ -1,4 +1,61 @@
-.test {
-  color: red;
-  font-size: 50px;
+.header {
+  background-image: url(../images/header-img/donuts-mob-3x.png);
+  background-size: 130px 165px;
+  background-position: -12 -51;
+  background-repeat: no-repeat;
+}
+.container--center {
+  position: relative;
+  text-align: center;
+}
+.logo {
+  display: inline-block;
+  margin: 8px auto 31px auto;
+}
+.nav {
+  display: none;
+  @media (min-width: 1280px) {
+    display: flex;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+  }
+}
+.mob-menu__open-btn {
+  position: absolute;
+  display: inline-block;
+  top: 16;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.main-title {
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  max-width: 224px;
+  margin: 0 auto 8px auto;
+  color: $main-color;
+}
+.subtitle {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.button--header {
+  margin: 0 auto 40px auto;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
 }
