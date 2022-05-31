@@ -1,6 +1,6 @@
-// .header {
-//   height: 1100px;
-// }
+.header {
+  padding-bottom: 110px;
+}
 .wrapper {
   @media (min-width: 1280px) {
     display: flex;
@@ -9,33 +9,11 @@
   }
 }
 .container--center {
-  height: 500px;
   position: relative;
   text-align: center;
-  background-image: url(../images/header-img/donuts-mob-1.5x.png);
-  background-size: 130px 165px;
-  background-position: -12 -51;
-  background-repeat: no-repeat;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/header-img/donuts-desktop-3x.png);
-  }
+
   @media (min-width: 768px) {
     text-align: left;
-    background-image: url(../images/header-img/donuts-tablet-1.5x.png);
-    background-position: 288 -35;
-    background-size: 378px 396px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/header-img/donuts-tablet-3x.png);
-    }
-  }
-  @media (min-width: 1280px) {
-    background-image: url(../images/header-img/donuts-desktop-1.5x.png);
-    background-size: 793px 831px;
-    background-position: 564 -170;
   }
 }
 .logo {
