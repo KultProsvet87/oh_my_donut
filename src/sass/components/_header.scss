@@ -1,16 +1,34 @@
-.header {
-  background-image: url(../images/header-img/donuts-mob-3x.png);
-  background-size: 130px 165px;
-  background-position: -12 -51;
-  background-repeat: no-repeat;
-}
 .container--center {
   position: relative;
   text-align: center;
+  background-image: url(../images/header-img/donuts-mob-1.5x.png);
+  background-size: 130px 165px;
+  background-position: -12 -51;
+  background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/header-img/donuts-desktop-3x.png);
+  }
+  @media (min-width: 768px) {
+    text-align: left;
+    background-image: url(../images/header-img/donuts-tablet-1.5x.png);
+    background-position: 288 -35;
+    background-size: 378px 396px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header-img/donuts-tablet-3x.png);
+    }
+  }
 }
 .logo {
   display: inline-block;
   margin: 8px auto 31px auto;
+  @media (min-width: 768px) {
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
 }
 .nav {
   display: none;
@@ -33,6 +51,9 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  @media (min-width: 1280px) {
+    display: none;
+  }
 }
 .main-title {
   font-family: 'Caveat Brush';
@@ -42,20 +63,32 @@
   max-width: 224px;
   margin: 0 auto 8px auto;
   color: $main-color;
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 .subtitle {
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 .button--header {
   margin: 0 auto 40px auto;
+  @media (min-width: 768px) {
+    margin: 0 0 20px 0;
+  }
 }
 .social-media {
   display: flex;
   justify-content: center;
   &__item:not(:last-child) {
     margin-right: 16px;
+  }
+  @media (min-width: 768px) {
+    justify-content: start;
   }
 }
