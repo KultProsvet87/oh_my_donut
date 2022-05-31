@@ -1,28 +1,32 @@
 .program {
-  margin-bottom: 20px;
-  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  padding-bottom: 52px;
 
-  @include for-tablet {
-    display: flex;
-    padding-bottom: 53px;
-    padding-top: 77px;
+  &__container {
+    @include for-tablet {
+      display: flex;
+    }
+
+    @include for-laptop {
+      padding-left: 122px;
+      padding-right: 122px;
+    }
   }
 
   @include for-laptop {
     font-size: 18px;
     line-height: 1.22;
-    padding-top: 22px;
+
     padding-bottom: 134px;
-    padding-left: 122px;
-    padding-right: 122px;
   }
 
   &__history {
+    margin-bottom: 55px;
     @include for-tablet {
+      margin-bottom: 0;
       max-width: 336px;
       margin-right: 32px;
     }
@@ -87,26 +91,20 @@
   &__meta {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 35px;
-    padding-bottom: 32px;
-    margin: -30px -10px;
-
+    gap: 60px 20px;
     @include for-tablet {
-      margin: -23px -16px;
-      padding-top: 0;
-      padding-bottom: 0;
+      gap: 50px 32px;
       max-height: 352px;
     }
 
     @include for-laptop {
-      padding-top: 43px;
-      margin: -40px -70px;
+      padding-top: 42px;
+      gap: 80px 140px;
       max-height: 440px;
     }
   }
 
   &__card {
-    margin: 30px 10px;
     flex-basis: calc((100% - 40px) / 2);
 
     &:nth-child(2n) {
@@ -114,16 +112,18 @@
     }
 
     @include for-tablet {
-      margin: 23px 16px;
       flex-basis: calc((100% - 64px) / 2);
 
       &:nth-child(2n) {
-        transform: translateY(45px);
+        transform: translateY(31px);
+      }
+
+      &:last-child {
+        transform: translateY(26px);
       }
     }
 
     @include for-laptop {
-      margin: 40px 70px;
       flex-basis: calc((100% - 280px) / 2);
 
       &:nth-child(2n) {
