@@ -1,31 +1,31 @@
 .registration{
+    display: flex;
+    justify-content: center;
+    &__box{
+        background-color:#FFFFF9;
+        box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+        border-radius: 150px 150px 0px 0px;
+        padding-left: 8px;
+        padding-right: 8px;
+        
+        @media (min-width: 767px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 150px;
+            width: 704px;
+            height: 260px;
+            padding: 0;
+        }
+        @media (min-width: 1280px) {
+            width: 822px;
+            height: 260px;
+        }
+        }
+
     /*background-image: url(../images/registration/registration-bagel.png);*/
-    background-color:#FFFFF9;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-    border-radius: 150px 150px 0px 0px;
-    padding-left: 8px;
-    padding-right: 8px;
-    
-    @media (min-width: 767px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 150px;
-        width: 704px;
-        height: 260px;
-        padding: 0;
-    }
-    @media (min-width: 1280px) {
-        width: 822px;
-        height: 260px;
-    }
-
-    &__section{
-        display: flex;
-        justify-content: center;
-    }
-
     &__name{
+        font-family: 'Caveat Brush';
         padding-top: 32px;
         padding-bottom: 20px;
         font-weight: 400;
@@ -46,13 +46,14 @@
             margin-top: -316px;
         }
     }
-    &__form{
+
+    &__info{
         @media (min-width: 768px) {
             display: flex;           
         }
     }
 
-    &__info{
+    &__list{
         font-weight: 500;
         font-size: 18px;
         line-height: 1.2222;
@@ -73,6 +74,9 @@
             font-size: 20px;
             line-height: 1.2;
         }
+    }
+    &__link:last-child{
+        
     }
 
     &__date{
