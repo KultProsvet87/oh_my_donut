@@ -1,4 +1,109 @@
-.test {
-  color: red;
-  font-size: 50px;
+.header {
+  padding-bottom: 110px;
+}
+.wrapper {
+  @media (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
+.container--center {
+  position: relative;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+.logo {
+  display: inline-block;
+  margin: 8px auto 31px auto;
+  @media (min-width: 768px) {
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 1280px) {
+    margin: 38px 162px 42px 0;
+  }
+}
+.nav {
+  display: none;
+  @media (min-width: 1280px) {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__link {
+    color: $main-color;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.mob-menu__open-btn {
+  position: absolute;
+  display: inline-block;
+  top: 16;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+.main-title {
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  max-width: 224px;
+  margin: 0 auto 8px auto;
+  color: $main-color;
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
+  @media (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 1.02;
+    max-width: 490px;
+    margin-bottom: 16px;
+  }
+}
+.subtitle {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+.button--header {
+  margin: 0 auto 40px auto;
+  @media (min-width: 768px) {
+    margin: 0 0 20px 0;
+  }
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+  @media (min-width: 768px) {
+    justify-content: start;
+  }
 }
