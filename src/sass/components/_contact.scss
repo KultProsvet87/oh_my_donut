@@ -1,0 +1,63 @@
+.contact-title {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    
+    margin-bottom: 20px;
+  
+    color: $main-color;
+        @media (min-width: 1280px) {
+            font-size: 36px;            
+        }
+  }
+  .contact-form__title {    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    
+    margin-bottom: 16px;
+
+    color: $main-color;    
+        @media (min-width: 1280px) {
+            font-size: 18px;
+            line-height: 1.22;
+        }
+  }
+
+  .contact-form__input {
+    display: flex;
+    margin: 0 auto;
+    width: 280px;
+    height: 22px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $main-accent;    
+    outline: none;
+    color: rgba(171, 129, 108, 0.5);
+        @media (min-width: 768px) {
+            width: 336px;
+        }
+        @media (min-width: 1280px) {
+            width: 394px;
+        }
+}
+.contact-form__input::placeholder{
+    color: rgba(171, 129, 108, 0.5);
+}
+.contact-email {
+    margin-bottom: 20px;
+}
+.contact-text {
+    margin-bottom: 32px;
+}
+  .button-centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;      
+  }
+  
