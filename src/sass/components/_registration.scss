@@ -31,8 +31,8 @@
         }
         
         @media (min-width: 1280px) {
+            margin: 0 auto;
             width: 822px;
-            height: 260px;
         }
     }
 
@@ -134,25 +134,23 @@
     }
 
     &__data-apply{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.2222;
         margin: 0;
         padding-top: 8px;
         padding-bottom: 22px;
 
         @media (min-width: 768px) {
-            
+            font-size: 18px;
             text-align: left;
             padding-top: 0;
             padding-bottom: 18px;
-        }
-
-        @media (min-width: 768px) {
             width: 237px;
         }
 
         @media (min-width: 1280px) {
             width: 234px;
+            font-size: 18px;
         }
     }
 
