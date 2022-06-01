@@ -10,6 +10,9 @@
     &__item:not(:last-child) {
         margin-right: 16px;
     }
+    &__icon {
+        fill: $main-color;
+    }
 
 }
 
@@ -17,24 +20,20 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
-}
 
-.footer-contacts__link {
-    display: flex;
-    align-items: center;
-
-    color: $main-color;
-    font-style: regular;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-  
-}
-
-.footer-contacts__icon {
-    margin-right: 4px;
-}
-
-.footer-media__icon {
-    fill: $main-color;
+    &__link {
+            display: flex;
+            align-items: center;
+    
+            color: $main-color;
+            font-style: regular;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+    
+        }
+    
+        &__icon {
+            margin-right: 4px;
+        }
 }
