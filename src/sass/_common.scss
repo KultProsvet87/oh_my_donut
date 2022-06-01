@@ -101,9 +101,12 @@ img {
     line-height: 1.25;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     transform: translateY(-2px);
     background-color: #876655;
+  }
+
+  &:active {
+    background-color: #674d40;
   }
 }
