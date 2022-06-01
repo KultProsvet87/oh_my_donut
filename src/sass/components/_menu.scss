@@ -1,26 +1,41 @@
+//ZOOM EFFECT ON HOVER MENU ICONS AND LINKS
+
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+//OVERLAY
 .mob-menu {
+  display: block;
   position: fixed;
+
+  top: 0;
+  right: 0;
+
   width: 100vw;
   height: 100vh;
-  top: 0;
 
   padding: 25px;
+  justify-content: center;
 
   background-color: $menu-beckdrop-color;
-}
-.mob-menu__logo {
-  display: block;
 
-  width: 190px;
-  max-height: 85px;
-
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  opacity: 0.5;
+  transform: translateY(100%);
+  transition: all 400ms ease-in;
 }
+//CLOSE BUTTON
 .mob-menu__close-btn {
   position: absolute;
   display: flex;
+  z-index: 101;
+  cursor: pointer;
 
   top: 20px;
   right: 20px;
@@ -47,19 +62,43 @@
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.3, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
+  &:hover {
     fill: $menu-accent-color;
+    animation: zoom 200ms ease-in;
+  }
+  &:active {
+    fill: $prgm-icon-color;
   }
 }
-.mob-menu__list {
-  display: block;
-  text-align: center;
+//LOGO (svg)
+.mob-menu__logo {
+  display: flex;
 
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  width: 190px;
+  max-height: 85px;
+
+  fill: $main-color;
+
+  opacity: 0;
+  transform: translateY(2%);
+  transition: all 1000ms ease-in;
+  cursor: pointer;
+}
+//NAVIGATION
+.mob-menu__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.mob-menu__list {
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
 }
+
 .mob-menu__item {
   &:not(:last-child) {
     margin-bottom: 45px;
@@ -69,19 +108,71 @@
     }
   }
 
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
 
-  &:hover,
-  &:focus {
+  transform: translateY(2%);
+  transition: all 200ms ease-in;
+  cursor: pointer;
+
+  &:hover {
     color: $menu-accent-color;
   }
+
+  /*&:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background-color: currentColor;
+    transition: width 200ms ease-in;
+  }*/
+
+  /*&:hover:after {
+    width: 100%;
+  }*/
 }
 .mob-menu__link {
   color: currentColor;
-
-  &:visited {
+  &:active {
     color: $prgm-icon-color;
+  }
+}
+
+//SMOOTH APPEARANCE EFFECT
+.mob-menu.active {
+  transform: translateX(0%);
+  opacity: 1;
+  z-index: 100;
+
+  .mob-menu__logo {
+    transition-delay: 0.2s;
+  }
+
+  .mob-menu__item--about {
+    transition-delay: 0.3s;
+  }
+
+  .mob-menu__item--program {
+    transition-delay: 0.4s;
+  }
+
+  .mob-menu__item--reviews {
+    transition-delay: 0.5s;
+  }
+
+  .mob-menu__item--contacts {
+    transition-delay: 0.6s;
+  }
+
+  .mob-menu__item,
+  .mob-menu__logo {
+    opacity: 1;
+    transform: translateX(0%);
+
+    &:hover {
+      animation: zoom 200ms ease-in;
+    }
   }
 }
