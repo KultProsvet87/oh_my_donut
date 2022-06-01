@@ -1,0 +1,35 @@
+.footer {
+    padding-bottom: 20px;
+}
+
+.footer-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 59px;
+
+    &__item:not(:last-child) {
+        margin-right: 16px;
+    }
+
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.footer-contacts__link {
+    display: flex;
+    align-items: center;
+
+    color: $main-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  
+}
+
+.footer-contacts__icon {
+    margin-right: 4px;
+}
