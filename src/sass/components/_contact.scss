@@ -1,4 +1,7 @@
-.contact-title {
+.contact{
+    margin-bottom: 32px;
+}
+.contact__title {
     font-family: 'Caveat Brush';
     font-weight: 400;
     font-size: 24px;
@@ -12,7 +15,7 @@
             font-size: 36px;            
         }
   }
-  .contact-form__title {    
+  .contact__form-title {    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -27,7 +30,8 @@
         }
   }
 
-  .contact-form__input {
+  .contact__form-input-email,
+  .contact__form-input-text {
     display: flex;
     margin: 0 auto;
     width: 280px;
@@ -45,16 +49,19 @@
             width: 394px;
         }
 }
-.contact-form__input::placeholder{
+.contact__form-input-email::placeholder{
+    color: rgba(171, 129, 108, 0.5);    
+}
+.contact__form-input-text::placeholder{
     color: rgba(171, 129, 108, 0.5);
 }
-.contact-email {
+.contact__form-input-email {
     margin-bottom: 20px;
 }
-.contact-text {
+.contact__form-input-text {
     margin-bottom: 32px;
 }
-  .button-centered {
+.button-centered {
       display: flex;
       align-items: center;
       justify-content: center;
