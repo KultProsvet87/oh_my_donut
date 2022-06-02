@@ -83,6 +83,17 @@
     line-height: 1.28;
     color: $main-accent;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: #876655;
+    }
+
+    &:active {
+      color: #674d40;
+    }
+
     @include for-laptop {
       display: none;
     }
