@@ -18,13 +18,13 @@
                 <div class="registration__data">
                         <p class="registration__data-apply">Apply your personal info for registration </p>
                         <label class="registration__label">
-                            <input class="registration__input contact-name" type="name" placeholder="Your name">            
+                            <input class="registration__input contact-name" type="text" placeholder="Your name" pattern="^[a-zA-Z\s]{2,20}" required>            
                         </label>
                         <label class="registration__label">
-                            <input class="registration__input contact-number" type="phone" placeholder="Phone number">            
+                            <input class="registration__input contact-number" type="tel" placeholder="Phone number" required>            
                         </label>
                         <label class="registration__label">
-                            <input class="registration__input contact-Email" type="Email" placeholder="Email">            
+                            <input class="registration__input contact-Email" type="Email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>            
                         </label>
                 </div>  
                 <div class="registration__button">
