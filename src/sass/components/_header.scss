@@ -60,14 +60,14 @@
 }
 .mob-menu__open-btn {
   position: absolute;
-  top: 16px;
+  top: 10px;
   right: 20px;
   margin: 0;
   padding: 0;
   background-color: transparent;
   border: none;
   @media (min-width: 768px) {
-    top: 32px;
+    top: 26px;
     right: 32px;
   }
   @media (min-width: 1280px) {
@@ -76,7 +76,7 @@
 }
 .mob-menu__icon {
   width: 30px;
-  height: 16px;
+  height: 30px;
 }
 .main-title {
   font-family: 'Caveat Brush';
