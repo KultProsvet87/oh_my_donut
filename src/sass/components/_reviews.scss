@@ -17,6 +17,7 @@
   font-family: Caveat Brush;
   font-size: 24px;
   line-height: 1.25;
+  font-weight: 400;
 
   @include for-laptop {
     font-size: 36px;
@@ -26,7 +27,7 @@
 
 .slider {
   img {
-    // border-radius: 50%;
+    border-radius: 50%;
     width: 100%;
     display: block;
   }
@@ -96,7 +97,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  cursor: pointer;
   position: absolute;
   width: 152px;
 
@@ -141,13 +142,21 @@
 
 .slider-rewiews {
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
   font-size: 18px;
   width: 100%;
   max-width: 1030px;
   position: relative;
 
-  margin-bottom: 32px;
+  @include for-tablet {
+    height: 80px;
+    // justify-content: flex-start;
+  }
+
+  // margin-bottom: 32px;
 
 
 }
@@ -178,14 +187,10 @@
   height: 20px;
 
   &:hover {
-    .action__prev--standart {
-      display: none;
-    }
+
 
     .action__next--hover,
-    .action__prev--hover {
-      display: inline;
-    }
+    .action__prev--hover {}
   }
 
 
@@ -200,7 +205,7 @@
 
 .action__next--hover,
 .action__prev--hover {
-  display: none;
+  cursor: pointer;
   margin-bottom: 1px;
 }
 
