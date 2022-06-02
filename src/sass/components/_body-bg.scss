@@ -71,3 +71,50 @@
     }
   }
 }
+.bg {
+  position: relative;
+}
+.bg-bottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(../images/body-bg/wheat-flour-mob@1x.png),
+    url(../images/body-bg/bg-bottom-mob.svg);
+  background-position: right bottom, center top;
+  background-size: calc(87px + 40 * ((100vw - 320px) / 160)),
+    100% calc(100% - 180px);
+  background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/body-bg/wheat-flour-mob@2x.png),
+      url(../images/body-bg/bg-bottom-mob.svg);
+  }
+  @media (min-width: 768px) {
+    background-image: url(../images/body-bg/wheat-flour-tablet@1x.png),
+      url(../images/body-bg/bg-bottom-tablet.svg);
+    background-position: right bottom, center top;
+    background-size: 184px, 100% calc(100% - 50px);
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/body-bg/wheat-flour-tablet@2x.png),
+        url(../images/body-bg/bg-bottom-tablet.svg);
+    }
+  }
+  @media (min-width: 1280px) {
+    background-image: url(../images/body-bg/wheat-flour-laptop@1x.png),
+      url(../images/body-bg/bg-bottom-laptop.svg);
+    background-position: right bottom, center top;
+    background-size: 302px, 100% 100%;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/body-bg/wheat-flour-laptop@2x.png),
+        url(../images/body-bg/bg-bottom-laptop.svg);
+    }
+  }
+}
