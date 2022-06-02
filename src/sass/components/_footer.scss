@@ -28,3 +28,9 @@
 .social-media--footer {
     justify-content: center;
 }
+
+.footer-contacts__item--geo-mark {
+    @media (min-width: 1280px) {
+        margin-right: 320px;
+    }
+}
