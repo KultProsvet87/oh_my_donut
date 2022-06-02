@@ -1,6 +1,8 @@
 .registration{
-    padding-bottom: 32px;
+
     &__section{
+        padding-bottom: 32px;
+
         @media (min-width: 767px) {
             padding-bottom: 78px;
             padding-top: 73px;
@@ -11,13 +13,14 @@
         }
     }
     &__box{
+        margin-left: auto;
+        margin-right: auto;
+        width: 280px;
         background-color:#FFFFF9;
         box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
         border-radius: 150px 150px 0px 0px;
         padding-left: 8px;
         padding-right: 8px;
-        position: relative;
-
 
         @media (min-width: 767px) {
             display: flex;
@@ -27,7 +30,7 @@
             width: 704px;
             height: 260px;
             padding: 0;
-            
+            position: relative;
         }
         
         @media (min-width: 1280px) {
@@ -155,8 +158,9 @@
     }
 
     &__input{
+
+        width: 100%;
         margin: 0 auto;
-        width: 264px;
         height: 22px;
         border-top: none;
         border-left: none;
@@ -229,6 +233,48 @@
             }
         @media (min-width: 1280px) {
             padding-left: 27px;
+        }
+    }
+  
+    &__bagel{
+        
+        @media (min-width: 768px) {
+            
+            position: absolute;
+            top: -90px;
+            left: -30px;
+            background-image: url(../images/registration/bublic.png);
+            width: 225px;
+            height: 225px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: -1;
+            }
+        @media (min-width: 1280px) {
+            top: -60px;
+            left: -120px;
+            width: 225px;
+            height: 225px;
+        }
+    }
+
+    &__party{
+        @media (min-width: 768px) {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 400px;
+        height: 400px;
+        background-image: url(../images/registration/party.png);
+        top: 10px;
+        left: 385px;
+        z-index: -1;
+        }
+        @media (min-width: 1280px) {
+            width: 500px;
+        height: 500px;
+            top: 10px;
+        left: 485px;
         }
     }
 }
