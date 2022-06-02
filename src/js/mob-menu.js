@@ -11,11 +11,6 @@ document
     document.querySelector('.mob-menu').classList.toggle('active');
   });
 //CLOSE MENU BY CLICK ON LINK
-/*document
-  .querySelectorAll('.mob-menu__link')
-  .addEventListener('click', function () {
-    document.querySelector('.mob-menu').classList.toggle('active');
-  });*/
 const menu__link = document.querySelectorAll('.mob-menu__link');
 
 function classToogle() {
@@ -24,4 +19,3 @@ function classToogle() {
 menu__link.forEach(item => {
   item.addEventListener('click', classToogle);
 });
-alert(1);
