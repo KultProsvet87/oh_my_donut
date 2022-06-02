@@ -22,7 +22,7 @@ function init() {
     navigation.addEventListener("click", navigationHandler);
   }
 
-  activeOrder = Math.floor(slides.length / 2);
+  activeOrder = Math.floor(slides.length / 5);
 
   update();
 }
