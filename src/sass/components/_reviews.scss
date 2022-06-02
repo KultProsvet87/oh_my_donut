@@ -1,5 +1,14 @@
 #reviews {
-  // background-color: $prgm-item-bg-color;
+  @include for-tablet {
+    padding-top: 23px;
+  }
+
+  @include for-laptop {
+    padding-top: 36px;
+  }
+
+  padding-bottom: 60px;
+
 }
 
 .reviews__title {
@@ -8,7 +17,12 @@
   font-family: Caveat Brush;
   font-size: 24px;
   line-height: 1.25;
+
+  @include for-laptop {
+    font-size: 36px;
+  }
 }
+
 
 .slider {
   // background-color: #FEF3E4;
@@ -71,6 +85,7 @@
 
 
 img {
+  border-radius: 50%;
   width: 100%;
   display: block;
 }
@@ -125,6 +140,8 @@ img {
 }
 
 .slider-rewiews {
+  text-align: center;
+
   font-size: 18px;
   width: 100%;
   max-width: 1030px;
@@ -133,6 +150,11 @@ img {
   margin-bottom: 32px;
 
 
+}
+
+.rewievs-text {
+  min-height: 45px;
+  text-align: center;
 }
 
 .slider-rewiews p {

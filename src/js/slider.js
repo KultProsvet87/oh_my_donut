@@ -22,10 +22,14 @@ function init() {
     navigation.addEventListener("click", navigationHandler);
   }
 
-  activeOrder = Math.floor(slides.length / 2);
+  activeOrder = Math.floor(slides.length / 5);
 
   update();
 }
+
+window.addEventListener('resize', function (event) {
+  update();
+}, false);
 
 function update() {
   const {
@@ -43,13 +47,13 @@ function update() {
   if (mediaPhone.matches) {
     c = 0;
     paddingTop = 150;
-    paddingLeft = 375;
+    paddingLeft = 370;
   } else if (mediaTablet.matches) {
     paddingTop = 160;
     paddingLeft = 270;
     c = 40;
   } else {
-    paddingTop = 150;
+    paddingTop = 195;
     paddingLeft = 375;
     c = 65;
   }
@@ -87,7 +91,6 @@ function update() {
     swapRewievsText();
 
     let w = window.getComputedStyle(slides[i]).width;
-    console.log(w);
   }
 }
 
@@ -102,7 +105,6 @@ function clickHandler() {
   const order = parseInt(this.dataset.order, 10);
   activeOrder = order;
   update();
-  console.log(navigations);
 }
 
 function navigationHandler() {
