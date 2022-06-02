@@ -3,7 +3,7 @@
     padding-bottom: 69px;
   }
   @media (min-width: 1280px) {
-    padding-bottom: 111px;
+    padding-bottom: 95px;
   }
 }
 .wrapper {
@@ -52,6 +52,9 @@
   &__item:not(:last-child) {
     margin-right: 20px;
   }
+  &__content {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   &__link {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -61,6 +64,16 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background: linear-gradient(145deg, #fffff4, #e5dbcd);
+      box-shadow: 10px 10px 19px #eae0d2, -10px -10px 19px #fffff6;
+    }
+    &:hover .nav__content {
+      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+        1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
   }
 }
 .mob-menu__open-btn {
