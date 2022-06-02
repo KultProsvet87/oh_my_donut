@@ -1,35 +1,27 @@
-<div class="mob-menu is-hidden">
-  <!-- is-hidden -->
-  <a href="./index.html"
-    ><svg class="mob-menu__logo">
-      <use href="./images/sprite.svg#logo"></use>
-    </svg>
-  </a>
+<div class="mob-menu">
   <button class="mob-menu__close-btn" type="button">
     <svg class="mob-menu__close-icon">
       <use href="./images/sprite.svg#icon-close"></use>
     </svg>
   </button>
-  <ul class="mob-menu__list">
-    <li class="mob-menu__item">
-      <a href="/#about" class="mob-menu__link" onclick="location.reload()"
-        >About us</a
-      >
-    </li>
-    <li class="mob-menu__item">
-      <a href="/#program" class="mob-menu__link" onclick="location.reload()"
-        >Program</a
-      >
-    </li>
-    <li class="mob-menu__item">
-      <a href="/#reviews" class="mob-menu__link" onclick="location.reload()"
-        >Reviews</a
-      >
-    </li>
-    <li class="mob-menu__item">
-      <a href="/#contacts" class="mob-menu__link" onclick="location.reload()"
-        >Contacts</a
-      >
-    </li>
-  </ul>
+ <a href="./index.html"><svg class="mob-menu__logo">
+      <use href="./images/sprite.svg#logo"></use>
+    </svg>
+  </a>
+  <nav class="mob-menu__nav">
+    <ul class="mob-menu__list">
+      <li class="mob-menu__item mob-menu__item--about">
+        <a href="#about" class="mob-menu__link">About us</a>
+      </li>
+      <li class="mob-menu__item mob-menu__item--program">
+        <a href="#program" class="mob-menu__link">Program</a></li>
+      </li>
+      <li class="mob-menu__item mob-menu__item--reviews">
+        <a href="#reviews" class="mob-menu__link">Reviews</a></li>
+      </li>
+      <li class="mob-menu__item mob-menu__item--contacts">
+        <a href="#contacts" class="mob-menu__link">Contacts</a>
+      </li>
+    </ul>
+  </nav>
 </div>

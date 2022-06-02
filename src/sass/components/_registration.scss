@@ -1,6 +1,8 @@
 .registration{
+
     &__section{
         padding-bottom: 32px;
+
         @media (min-width: 767px) {
             padding-bottom: 78px;
             padding-top: 73px;
@@ -19,7 +21,6 @@
         border-radius: 150px 150px 0px 0px;
         padding-left: 8px;
         padding-right: 8px;
-    
 
         @media (min-width: 767px) {
             display: flex;
@@ -30,16 +31,13 @@
             height: 260px;
             padding: 0;
             position: relative;
-            
         }
         
         @media (min-width: 1280px) {
             margin: 0 auto;
             width: 822px;
-          
         }
     }
-    
 
     &__name{
         font-family: 'Caveat Brush';
@@ -160,9 +158,9 @@
     }
 
     &__input{
-        width: calc(100%);
+
+        width: 100%;
         margin: 0 auto;
-        
         height: 22px;
         border-top: none;
         border-left: none;
@@ -237,9 +235,7 @@
             padding-left: 27px;
         }
     }
-    &__photo{
-      
-        }
+  
     &__bagel{
         
         @media (min-width: 768px) {
@@ -281,20 +277,7 @@
         left: 485px;
         }
     }
-    
-
-
 }
 .contact-name{
     margin-top: 0;
 }
-/*
-.bublic {
-        background-color: aqua;
-        position: absolute;
-
-        
-        background-image: url(../images/registration/bublic.png);
-        
-      
-    }*/
