@@ -7,11 +7,8 @@
 
 .container.about-us__container {
    
-    @media screen and (min-width: 768px) {
-        padding-left: 1px;
-}
     @media screen and (min-width: 1280px) {
-        padding: 0px 125px 0px 123px;
+        padding: 0px 109px 0px 106px;
 }
 }
 
@@ -25,14 +22,14 @@
     @media screen and (min-width: 1280px) {
         padding-bottom: 22px;
 }
-}
 
-.about-us__card {
+
+    &__card {
 
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;  
-        margin-left: 32px;   
+        margin-left: 0px;   
         margin-right: 0px; 
 }
     @media screen and (min-width: 1280px) {
@@ -40,7 +37,7 @@
 }
 }
 
-.about-us__content {
+    &__content {
     @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 32px);
         margin-left: 32px;
@@ -51,7 +48,7 @@
 }
 }
 
-.about-us__image {
+    &__image {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 16px;
@@ -59,9 +56,14 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 0px;
     }
+    
+    @media screen and (min-width: 1280px) {
+        position: relative;
+        z-index: -2;
+    }
 }
 
-.about-us__title {
+    &__title {
     font-family: 'Caveat Brush';
     font-size: 24px;
     line-height: 1.25;
@@ -82,7 +84,7 @@
     }
 }
 
-.about-us__description {
+    &__description {
     font-size: 16px;
     line-height: 1.25;
 
@@ -92,7 +94,7 @@
     }
 }
 
-.about-us__button {
+    &__button {
     padding: 0;
     text-align: left;
   
@@ -106,7 +108,20 @@
   
     background-color: transparent;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: #876655;
+    }
+
+    &:active {
+        color: #674D40;
+    }
+
+
     @media screen and (min-width: 1280px) {
         display: none;
     }
+}
 }
