@@ -277,7 +277,10 @@
         left: 485px;
         }
     }
+    &__input:invalid:not(:placeholder-shown) {border-color: red;}
+    &__input:valid:not(:placeholder-shown) {border-color: green;}
 }
 .contact-name{
     margin-top: 0;
+    text-transform: capitalize;
 }
