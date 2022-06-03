@@ -41,7 +41,7 @@
   border-right: none;
   border-bottom: 1px solid $main-accent;
   outline: none;
-  color: rgba(171, 129, 108, 0.5);
+  color: $main-accent;
   @media (min-width: 768px) {
     width: 336px;
   }
@@ -50,10 +50,23 @@
   }
 }
 .contact__form-input-email::placeholder {
-  color: rgba(171, 129, 108, 0.5);
+  color: $placeholder-color;
 }
 .contact__form-input-text::placeholder {
-  color: rgba(171, 129, 108, 0.5);
+  color: $placeholder-color;
+}
+
+.contact__form-input-text:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+.contact__form-input-text:valid:not(:placeholder-shown) {
+  border-color: black;
+}
+.contact__form-input-email:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+.contact__form-input-email:valid:not(:placeholder-shown) {
+  border-color: black;
 }
 .contact__form-input-email {
   margin-bottom: 20px;
