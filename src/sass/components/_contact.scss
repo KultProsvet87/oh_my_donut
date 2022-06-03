@@ -1,5 +1,5 @@
 .contact {
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
 .contact__title {
   font-family: 'Caveat Brush';
@@ -41,7 +41,7 @@
   border-right: none;
   border-bottom: 1px solid $main-accent;
   outline: none;
-  color: $main-accent;
+  color: $main-color;
   @media (min-width: 768px) {
     width: 336px;
   }

@@ -5,7 +5,7 @@
   top: 0;
   z-index: -1;
   width: 100%;
-  height: 460px;
+  height: 470px;
   //   height: calc(100vw * 0.8086);
 
   background-image: url(../images/body-bg/bg-top-mob.svg);
@@ -29,6 +29,11 @@
       background-image: url(../images/body-bg/spoon@1x.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/body-bg/spoon@2x.png);
+      }
     }
   }
   &__right {
@@ -83,7 +88,7 @@
     url(../images/body-bg/bg-bottom-mob.svg);
   background-position: right bottom, center top;
   background-size: calc(87px + 40 * ((100vw - 320px) / 160)),
-    100% calc(100% - 180px);
+    100% calc(100% - 190px);
   background-repeat: no-repeat;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -95,7 +100,7 @@
     background-image: url(../images/body-bg/wheat-flour-tablet@1x.png),
       url(../images/body-bg/bg-bottom-tablet.svg);
     background-position: right bottom, center top;
-    background-size: 184px, 100% calc(100% - 50px);
+    background-size: 184px, 100% calc(100% - 20px);
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),

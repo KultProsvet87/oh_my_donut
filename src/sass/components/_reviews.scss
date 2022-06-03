@@ -1,14 +1,15 @@
 #reviews {
   @include for-tablet {
     padding-top: 23px;
+    padding-bottom: 40px;
   }
 
   @include for-laptop {
     padding-top: 36px;
+    padding-bottom: 60px;
   }
 
-  padding-bottom: 60px;
-
+  padding-bottom: 32px;
 }
 
 .reviews__title {
@@ -21,9 +22,9 @@
 
   @include for-laptop {
     font-size: 36px;
+    line-height: 1.91;
   }
 }
-
 
 .slider {
   img {
@@ -58,16 +59,12 @@
   svg {
     display: inline-block;
     height: 18px;
-
   }
-
-
 
   overflow: hidden;
 
   @include for-tablet {
     height: 469px;
-
   }
 
   @include for-laptop {
@@ -76,7 +73,6 @@
 }
 
 .reviews__rating {
-
   margin: 8px auto;
   fill: currentColor;
   display: flex;
@@ -89,9 +85,6 @@
   stroke: $main-accent;
 }
 
-
-
-
 .slide {
   opacity: 0;
   display: flex;
@@ -100,7 +93,6 @@
   cursor: pointer;
   position: absolute;
   width: 152px;
-
 
   /* border: 3px solid black; */
   text-align: center;
@@ -116,7 +108,6 @@
   @include for-laptop {
     width: 288px;
   }
-
 }
 
 .slide.active {
@@ -125,16 +116,14 @@
 
   @include for-tablet {
     width: 336px;
-
   }
 
   @include for-laptop {
     width: 400px;
   }
-
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .slide.active {
     width: 280px;
   }
@@ -157,8 +146,6 @@
   }
 
   // margin-bottom: 32px;
-
-
 }
 
 .rewievs-text {
@@ -180,22 +167,17 @@
 
 .slider-navigation {
   /* position: absolute; */
-  bottom: 0px
+  bottom: 0px;
 }
 
 .slider-button {
   height: 20px;
 
   &:hover {
-
-
     .action__next--hover,
-    .action__prev--hover {}
+    .action__prev--hover {
+    }
   }
-
-
-
-
 
   /* width: 35px; */
   background-color: transparent;
@@ -210,12 +192,13 @@
 }
 
 .action__prev {
-  &:hover {}
+  &:hover {
+  }
 }
 
 .action__prev--standart {
   margin-bottom: 5px;
-
 }
 
-.action__next {}
+.action__next {
+}

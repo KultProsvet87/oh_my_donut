@@ -1,286 +1,303 @@
-.registration{
+.registration {
+  &__section {
+    padding-bottom: 32px;
 
-    &__section{
-        padding-bottom: 32px;
-
-        @media (min-width: 767px) {
-            padding-bottom: 78px;
-            padding-top: 73px;
-        }
-        @media (min-width: 1280px) {
-            padding-top: 80px;
-            padding-bottom: 160px;
-        }
+    @media (min-width: 767px) {
+      padding-bottom: 78px;
+      padding-top: 73px;
     }
-    &__box{
-        margin-left: auto;
-        margin-right: auto;
-        width: 280px;
-        background-color:#FFFFF9;
-        box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-        border-radius: 150px 150px 0px 0px;
-        padding-left: 8px;
-        padding-right: 8px;
+    @media (min-width: 1280px) {
+      padding-top: 80px;
+      padding-bottom: 160px;
+    }
+  }
+  &__box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    background-color: #fffff9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+      4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0px 0px;
+    padding-left: 8px;
+    padding-right: 8px;
 
-        @media (min-width: 767px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 150px;
-            width: 704px;
-            height: 260px;
-            padding: 0;
-            position: relative;
-        }
-        
-        @media (min-width: 1280px) {
-            margin: 0 auto;
-            width: 822px;
-        }
+    @media (min-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 150px;
+      width: 704px;
+      height: 260px;
+      padding: 0;
+      position: relative;
     }
 
-    &__name{
-        font-family: 'Caveat Brush';
-        padding-top: 32px;
-        padding-bottom: 20px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1.25;
-        text-align: center;
-        color: $main-color;
-        margin: 0;
-        
+    @media (min-width: 1280px) {
+      margin: 0 auto;
+      width: 822px;
+    }
+  }
 
-        @media (min-width: 768px) {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            top: -73px;
-            font-size: 24px;
-            line-height: 2.7083;
-        }
-        @media (min-width: 1280px) {
-            top: -81px;
-            font-size: 36px;
-            line-height: 1.8055;
-        }
+  &__name {
+    font-family: 'Caveat Brush';
+    padding-top: 32px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: $main-color;
+    margin: 0;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      top: -73px;
+      font-size: 24px;
+      line-height: 2.7083;
+    }
+    @media (min-width: 1280px) {
+      top: -81px;
+      font-size: 36px;
+      line-height: 1.8055;
+    }
+  }
+
+  &__info {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2222;
+    color: $main-color;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid $placeholder-color;
+    padding-bottom: 20px;
+
+    @media (min-width: 768px) {
+      border-bottom: none;
+      margin-right: 20px;
+      text-align: right;
+      padding: 0;
     }
 
-    &__info{
-        @media (min-width: 768px) {
-            display: flex;           
-        }
+    @media (min-width: 1280px) {
+      margin-right: 32px;
+      font-size: 20px;
+      line-height: 1.2;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__date {
+    margin: 0;
+  }
+  &__item {
+    padding-top: 0;
+  }
+  &__item:last-child {
+    padding-top: 20px;
+  }
+
+  &__form {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      height: 180px;
+      border-left: 1px solid $main-accent;
+      padding-left: 27px;
+    }
+    @media (min-width: 1280px) {
+      height: 190px;
+      padding-left: 32px;
+    }
+  }
+
+  &__data {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $main-color;
+    text-align: center;
+    @media (min-width: 768px) {
+      width: 237px;
+    }
+  }
+
+  &__data-apply {
+    font-size: 16px;
+    line-height: 1.2222;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 22px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      text-align: left;
+      padding-top: 0;
+      padding-bottom: 18px;
+      width: 237px;
     }
 
-    &__list{
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.2222;
-        color: $main-color;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        border-bottom: 1px solid $placeholder-color;
-        padding-bottom: 20px;
-    
-        @media (min-width: 768px) {
-            border-bottom: none;
-            margin-right: 20px;
-            text-align: right;
-            padding: 0;
-        }
+    @media (min-width: 1280px) {
+      width: 234px;
+      font-size: 18px;
+    }
+  }
 
-        @media (min-width: 1280px) {
-            margin-right: 32px;
-            font-size: 20px;
-            line-height: 1.2;
-            padding-bottom: 50px;
-        }
+  &__input {
+    width: 100%;
+    margin: 0 auto;
+    height: 22px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $main-accent;
+    outline: none;
+    background-color: #fffff9;
+    color: $main-color;
+    margin-top: 10px;
+    @media (min-width: 768px) {
+      width: 237px;
     }
 
-    &__date{
-        margin: 0;
+    @media (min-width: 1280px) {
+      width: 234px;
     }
-    &__item{
-        padding-top: 0;
+  }
+
+  &__input::placeholder {
+    color: $placeholder-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: start;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  &__label {
+    padding-bottom: 22px;
+    @media (min-width: 768px) {
+      padding-bottom: 0;
     }
-    &__item:last-child{
-        padding-top: 20px;
+  }
+
+  &__button-options {
+    display: block;
+    background-color: $main-accent;
+    border-radius: 25px;
+    width: 145px;
+    height: 40px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+    text-align: center;
+    color: $main-bg-color;
+    font-family: 'Caveat Brush';
+
+    @media (min-width: 1280px) {
+      width: 158px;
+      height: 45px;
+      font-size: 24px;
+      line-height: 1.25;
     }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-    &__form{
-        @media (min-width: 768px) {
-            display: flex;
-            align-items: center;
-            height: 180px;
-            border-left: 1px solid $main-accent;
-            padding-left: 27px;
-        }
-        @media (min-width: 1280px) {
-            height: 190px;
-            padding-left: 32px;
-        }
+    @media (min-width: 768px) {
+      padding-left: 54px;
     }
-
-    &__data{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        color: $main-color;
-        text-align: center;
-        @media (min-width: 768px) {
-            width: 237px;
-        }
-
+    @media (min-width: 1280px) {
+      padding-left: 27px;
     }
+  }
 
-    &__data-apply{
-        font-size: 16px;
-        line-height: 1.2222;
-        margin: 0;
-        padding-top: 8px;
-        padding-bottom: 22px;
-
-        @media (min-width: 768px) {
-            font-size: 18px;
-            text-align: left;
-            padding-top: 0;
-            padding-bottom: 18px;
-            width: 237px;
-        }
-
-        @media (min-width: 1280px) {
-            width: 234px;
-            font-size: 18px;
-        }
+  &__bagel {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: -93px;
+      left: -30px;
+      background-image: url(../images/registration/bublic-tablet@1x.png);
+      width: 220px;
+      height: 231px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      z-index: -1;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/registration/bublic-tablet@2x.png);
+      }
     }
-
-    &__input{
-
-        width: 100%;
-        margin: 0 auto;
-        height: 22px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px solid $main-accent;    
-        outline: none;
-        background-color:#FFFFF9;
-        color: $main-color;
-        margin-top:10px;
-        @media (min-width: 768px) {
-            width: 237px;
-        }
-
-        @media (min-width: 1280px) {
-            width: 234px;
-        }
+    @media (min-width: 1280px) {
+      top: -69px;
+      left: -150px;
+      width: 257px;
+      height: 255px;
+      background-image: url(../images/registration/bublic-laptop@1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/registration/bublic-laptop@2x.png);
+      }
     }
+  }
 
-
-    &__input::placeholder{
-        color: $main-accent;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        text-align: start;
-        list-style: none;
-        margin: 0;
-        padding-left: 0;
+  &__party {
+    @media (min-width: 768px) {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 287px;
+      height: 374px;
+      background-image: url(../images/registration/party-tablet@1x.png);
+      top: 25px;
+      left: 449px;
+      z-index: -1;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/registration/party-tablet@2x.png);
+      }
     }
-
-    &__label{
-        padding-bottom: 22px;
-        @media (min-width: 768px) {
-            padding-bottom: 0;
-        }
+    @media (min-width: 1280px) {
+      width: 566px;
+      height: 590px;
+      top: -38px;
+      left: 485px;
+      background-image: url(../images/registration/party-laptop@1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/registration/party-laptop@2x.png);
+      }
     }
-
-    &__button-options{
-        display: block;
-        background-color: $main-accent;
-        border-radius: 25px;
-        width: 145px;
-        height: 40px;
-        border: none;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.25;
-        text-align: center;
-        color: $main-bg-color;
-        font-family: 'Caveat Brush';
-
-        
-      
-        @media (min-width: 1280px) {
-            width: 158px;
-            height: 45px;
-            font-size: 24px;
-            line-height: 1.25;
-            
-        }
-    }
-    &__button{
-        display: flex;
-        justify-content: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
-
-        @media (min-width: 768px) {
-            padding-left: 54px;
-            }
-        @media (min-width: 1280px) {
-            padding-left: 27px;
-        }
-    }
-  
-    &__bagel{
-        
-        @media (min-width: 768px) {
-            
-            position: absolute;
-            top: -90px;
-            left: -30px;
-            background-image: url(../images/registration/bublic.png);
-            width: 225px;
-            height: 225px;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            z-index: -1;
-            }
-        @media (min-width: 1280px) {
-            top: -60px;
-            left: -120px;
-            width: 225px;
-            height: 225px;
-        }
-    }
-
-    &__party{
-        @media (min-width: 768px) {
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        width: 350px;
-        height: 400px;
-        background-image: url(../images/registration/party.png);
-        top: 10px;
-        left: 385px;
-        z-index: -1;
-        }
-        @media (min-width: 1280px) {
-            width: 500px;
-        height: 500px;
-            top: 10px;
-        left: 485px;
-        }
-    }
-    &__input:invalid:not(:placeholder-shown) {border-color: red;}
-    &__input:valid:not(:placeholder-shown) {border-color: green;}
+  }
+  &__input:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
+  &__input:valid:not(:placeholder-shown) {
+    border-color: green;
+  }
 }
-.contact-name{
-    margin-top: 0;
-    text-transform: capitalize;
+.contact-name {
+  margin-top: 0;
+  text-transform: capitalize;
 }
