@@ -168,7 +168,7 @@
         border-bottom: 1px solid $main-accent;    
         outline: none;
         background-color:#FFFFF9;
-        color: $main-accent;
+        color: $main-color;
         margin-top:10px;
         @media (min-width: 768px) {
             width: 237px;
@@ -181,7 +181,7 @@
 
 
     &__input::placeholder{
-        color: $placeholder-color;
+        color: $main-accent;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
